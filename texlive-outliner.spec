@@ -1,3 +1,9 @@
+# revision 21095
+# category Package
+# catalog-ctan /macros/latex/contrib/outliner
+# catalog-date 2007-01-12 15:52:44 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-outliner
 Version:	20070112
 Release:	1
@@ -39,6 +45,7 @@ compilation.
 %files
 %{_texmfdistdir}/tex/latex/outliner/outliner.sty
 %doc %{_texmfdistdir}/doc/latex/outliner/outline_test.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -49,3 +56,5 @@ compilation.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
