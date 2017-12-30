@@ -5,7 +5,7 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-outliner
-Version:	0.94
+Version:	20170414
 Release:	1
 Summary:	Change section levels easily
 Group:		Publishing
