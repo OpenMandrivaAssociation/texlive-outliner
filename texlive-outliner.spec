@@ -5,8 +5,8 @@
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-outliner
-Version:	20070112
-Release:	10
+Version:	0.94
+Release:	1
 Summary:	Change section levels easily
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/outliner
