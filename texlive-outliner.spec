@@ -1,11 +1,5 @@
-# revision 21095
-# category Package
-# catalog-ctan /macros/latex/contrib/outliner
-# catalog-date 2007-01-12 15:52:44 +0100
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-outliner
-Version:	20170414
+Version:	0.94
 Release:	1
 Summary:	Change section levels easily
 Group:		Publishing
@@ -35,8 +29,8 @@ compilation.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/outliner/outliner.sty
-%doc %{_texmfdistdir}/doc/latex/outliner/outline_test.tex
+%{_texmfdistdir}/tex/latex/outliner
+%doc %{_texmfdistdir}/doc/latex/outliner
 
 #-----------------------------------------------------------------------
 %prep
@@ -47,17 +41,3 @@ compilation.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070112-2
-+ Revision: 754567
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070112-1
-+ Revision: 719175
-- texlive-outliner
-- texlive-outliner
-- texlive-outliner
-- texlive-outliner
-
