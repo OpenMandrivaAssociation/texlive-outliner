@@ -1,12 +1,12 @@
 Name:		texlive-outliner
-Version:	0.94
-Release:	2
+Version:	21095
+Release:	1
 Summary:	Change section levels easily
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/outliner
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/outliner.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/outliner.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/outliner.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/outliner.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -20,12 +20,12 @@ levels. This makes it easy to bundle existing articles into a
 compilation.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -34,7 +34,7 @@ compilation.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
