@@ -1,6 +1,6 @@
 Name:		texlive-outliner
 Version:	21095
-Release:	1
+Release:	2
 Summary:	Change section levels easily
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/outliner
