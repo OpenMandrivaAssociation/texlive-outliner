@@ -3,7 +3,7 @@ Version:	21095
 Release:	2
 Summary:	Change section levels easily
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/outliner
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/outliner
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/outliner.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/outliner.doc.r%{version}.tar.xz
